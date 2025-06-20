@@ -16,8 +16,8 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Senior Director,
-                <span className="text-teal-400 block">Clinical Science</span>
+                Julia Joy Jennings
+                <span className="text-teal-400 block text-3xl md:text-4xl mt-2">Senior Director, Clinical Science</span>
               </h1>
               <p className="text-xl text-slate-300">
                 Oncology Drug Development Expert
@@ -26,14 +26,20 @@ const Hero = () => {
             
             <div className="space-y-6 text-lg text-slate-200">
               <p>
-                Experienced Clinical Scientist specializing in oncology drug development with over a decade of expertise across both large biotech and small startup environments.
+                <span className="text-teal-400 font-semibold">Objective:</span> Experienced Clinical Scientist with oncology experience seeking an opportunity for career development and advancement. Highly motivated to build on existing skills, and develop and implement processes at a small to midsize biotech.
               </p>
               <p>
-                <span className="text-teal-400 font-semibold">Key Strengths:</span> Clinical trial leadership, strategic data review, protocol deviation oversight, scientific storytelling, and cross-functional collaboration.
+                <span className="text-teal-400 font-semibold">Core Expertise:</span> Clinical development planning, regulatory submissions, data integrity oversight, protocol development, cross-functional collaboration, and scientific mentorship in oncology therapeutics.
               </p>
               <p>
-                Adept at ensuring scientific and operational integrity in complex clinical trials while serving as a subject matter expert and mentor to clinical scientist peers.
+                Expert in working closely with Medical Directors, Pharmacology, Translational Research, Discovery teams, and external investigators to drive clinical development success.
               </p>
+            </div>
+
+            <div className="flex items-center space-x-4 text-sm text-slate-300">
+              <div>📍 Boston, MA</div>
+              <div>📧 JuliaJoyJennings@gmail.com</div>
+              <div>📞 (508) 423-4853</div>
             </div>
 
             <button 

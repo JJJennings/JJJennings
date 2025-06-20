@@ -6,36 +6,100 @@ const CareerTimeline = () => {
     {
       period: "May 2025 – Present",
       title: "Senior Director, Clinical Science",
-      company: "Deciphera Pharmaceuticals",
-      description: "Elevated to senior director to lead strategic clinical development efforts across oncology programs. Provide scientific leadership, mentor clinical scientists, and guide study execution and data integrity at a portfolio level.",
+      company: "Deciphera Pharmaceuticals, Waltham, MA",
+      description: "Works closely with Medical Directors, Pharmacology, Translational Research, Discovery, external experts, and investigators to accumulate scientific and medical knowledge necessary to support clinical development plans. Assists Medical Directors in development of concept sheets for clinical studies and contributes to authoring of clinical study protocols, amendments and related documents.",
+      highlights: [
+        "Monitors real time study data to ensure study integrity",
+        "Responsible for high level data cleaning activities requiring clinical judgment", 
+        "Contributes to clinical sections of study-related regulatory submissions",
+        "Clinical/scientific subject matter expert on products and studies in the therapeutic area"
+      ],
       type: "current"
     },
     {
-      period: "2023 – May 2025",
-      title: "Director, Clinical Science",
-      company: "Deciphera Pharmaceuticals",
-      description: "Returned to Deciphera to provide high-impact clinical science support on global oncology trials. Led data review strategies, protocol deviation oversight, and cross-functional study team collaboration.",
+      period: "October 2023 – May 2025",
+      title: "Director, Clinical Science (Early Development)",
+      company: "Deciphera Pharmaceuticals, Waltham, MA",
+      description: "Returned to Deciphera in an elevated role to provide strategic clinical science leadership on global oncology trials with focus on early development programs.",
+      highlights: [
+        "Presents data, protocol designs and information at advisory boards and investigator meetings",
+        "Attends scientific meetings to remain abreast of new developments",
+        "Involved in analysis of complex data for regulatory submissions, publications and design of studies"
+      ],
       type: "recent"
     },
     {
-      period: "2021 – 2023",
-      title: "Associate Director → Director, Clinical Development",
-      company: "SQZ Biotechnologies",
-      description: "Oversaw early-phase cell therapy trials in oncology. Developed clinical development plans, guided biomarker strategy, and played a key leadership role in a lean, fast-paced biotech environment.",
+      period: "December 2022 – October 2023",
+      title: "Director, Clinical Development (Clinical Scientist)",
+      company: "SQZ Biotechnologies, Watertown, MA",
+      description: "Led clinical development strategy for innovative cell therapy programs in oncology, working in a fast-paced biotech environment focused on cutting-edge therapeutic approaches.",
+      highlights: [
+        "Drove accumulation of essential scientific and medical knowledge supporting clinical development plans",
+        "Provided oversight for medical aspects of key regulatory and communication documents",
+        "Guided development of concept sheets and protocols for clinical studies",
+        "Engaged in critical data cleaning and complex data analysis for regulatory submissions"
+      ],
       type: "growth"
     },
     {
-      period: "2018 – 2021",
-      title: "Clinical Trial Associate → Senior Manager, Clinical Research",
-      company: "Deciphera Pharmaceuticals",
-      description: "Progressively promoted while supporting oncology drug development across Phases 1–3. Led clinical operations activities, data review planning, and site management in collaboration with cross-functional teams.",
+      period: "November 2021 – December 2022", 
+      title: "Associate Director, Clinical Scientist",
+      company: "SQZ Biotechnologies, Watertown, MA",
+      description: "Promoted to associate director role, taking on increased responsibilities in clinical development planning and execution for cell therapy trials in oncology.",
+      highlights: [
+        "Led clinical contributions to regulatory responses and submissions",
+        "Ensured study and data integrity through proactive monitoring",
+        "Actively participated in presenting study data at scientific and clinical forums"
+      ],
+      type: "growth"
+    },
+    {
+      period: "January 2021 – November 2021",
+      title: "Senior Manager, Clinical Research",
+      company: "Deciphera Pharmaceuticals, Waltham, MA",
+      description: "Advanced to senior management role, leading clinical research activities across multiple oncology programs with increased strategic oversight responsibilities.",
+      highlights: [
+        "Led development of master risk language for annual IB updates in partnership with Biostatistics, Medical, and Pharmacovigilance",
+        "Drafted clinical responses to regulatory queries",
+        "Interpreted analysis of complex data for regulatory submissions and publications"
+      ],
       type: "development"
     },
     {
-      period: "2015 – 2018",
-      title: "Clinical Administrative Support Specialist → Clinical Research Coordinator II",
-      company: "Dana-Farber Cancer Institute",
-      description: "Coordinated clinical trials in oncology, gaining frontline exposure to patient care, data entry, and protocol compliance. Developed foundational expertise in trial execution and clinical data workflows.",
+      period: "January 2020 – December 2020",
+      title: "Manager, Clinical Research", 
+      company: "Deciphera Pharmaceuticals, Waltham, MA",
+      description: "Promoted to management position, overseeing clinical research operations and data integrity across Phase 1-3 oncology trials.",
+      highlights: [
+        "Presented data, protocol designs at site initiation visits and protocol review committee meetings",
+        "Assisted Medical Directors in clinical study concept and protocol development",
+        "Contributed to preparation of abstracts, manuscripts, and presentations for external meetings"
+      ],
+      type: "development"
+    },
+    {
+      period: "January 2019 – December 2019",
+      title: "Clinical Research Associate II",
+      company: "Deciphera Pharmaceuticals, Waltham, MA", 
+      description: "Continued progression in clinical research role with expanded responsibilities in protocol development and data review for oncology drug development programs.",
+      highlights: [
+        "Worked with investigative sites to answer protocol related questions and resolve study conduct issues",
+        "Relieved study MD of some medical monitoring duties",
+        "Assisted in writing and concept development of ripretinib and binimetinib combination protocol"
+      ],
+      type: "development"
+    },
+    {
+      period: "February 2018 – December 2018",
+      title: "Clinical Trial Associate",
+      company: "Deciphera Pharmaceuticals, Waltham, MA",
+      description: "Entry-level position at Deciphera focused on supporting clinical trial operations and gaining expertise in pharmaceutical clinical research processes.",
+      highlights: [
+        "Drafted, reviewed, and revised clinical documents including protocols and informed consents",
+        "Participated in study start up activities and maintained study reference materials",
+        "Supported study specific trial master file management and electronic document systems",
+        "Collaborated with CROs, vendors and clinical sites on day-to-day trial activities"
+      ],
       type: "foundation"
     }
   ];
@@ -64,7 +128,7 @@ const CareerTimeline = () => {
           
           <div className="space-y-12">
             {positions.map((position, index) => (
-              <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+              <div key={index} className={`relative flex items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-br ${getTypeColor(position.type)} rounded-full border-4 border-white shadow-lg flex items-center justify-center`}>
                   <TrendingUp className="w-4 h-4 text-white" />
                 </div>
@@ -80,7 +144,21 @@ const CareerTimeline = () => {
                       <MapPin className="w-4 h-4" />
                       <span className="font-medium">{position.company}</span>
                     </div>
-                    <p className="text-slate-600 leading-relaxed">{position.description}</p>
+                    <p className="text-slate-600 leading-relaxed mb-4">{position.description}</p>
+                    
+                    {position.highlights && (
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-slate-700 text-sm">Key Accomplishments:</h4>
+                        <ul className="space-y-1">
+                          {position.highlights.map((highlight, idx) => (
+                            <li key={idx} className="text-sm text-slate-600 flex items-start">
+                              <span className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
+                              {highlight}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, FileText, Phone } from 'lucide-react';
+import { Mail, Linkedin, FileText, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -16,20 +16,34 @@ const Contact = () => {
               <div>
                 <h3 className="text-2xl font-bold text-slate-800 mb-4">Professional Contact</h3>
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  I'm always interested in connecting with fellow professionals in oncology clinical development, 
-                  discussing innovative approaches to clinical trials, or exploring leadership opportunities.
+                  Experienced Clinical Scientist seeking opportunities for career development and advancement. 
+                  Highly motivated to build on existing skills and develop processes at small to midsize biotech companies.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <a href="mailto:clinical.scientist@email.com" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
+                <a href="mailto:JuliaJoyJennings@gmail.com" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
                   <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
                     <Mail className="w-5 h-5 text-teal-600" />
                   </div>
-                  <span className="font-medium">clinical.scientist@email.com</span>
+                  <span className="font-medium">JuliaJoyJennings@gmail.com</span>
                 </a>
 
-                <a href="https://linkedin.com/in/clinical-scientist" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
+                <a href="tel:+15084234853" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
+                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
+                    <Phone className="w-5 h-5 text-teal-600" />
+                  </div>
+                  <span className="font-medium">(508) 423-4853</span>
+                </a>
+
+                <div className="flex items-center space-x-3 text-slate-700">
+                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-teal-600" />
+                  </div>
+                  <span className="font-medium">19 Crosstown Ave, Boston, MA 02132</span>
+                </div>
+
+                <a href="#" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
                   <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
                     <Linkedin className="w-5 h-5 text-teal-600" />
                   </div>
@@ -46,19 +60,23 @@ const Contact = () => {
             </div>
 
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">Areas of Expertise</h3>
+              <h3 className="text-xl font-bold mb-4">Core Competencies</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-                  <span>Oncology Clinical Development</span>
+                  <span>Clinical Development Planning</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-                  <span>Clinical Trial Leadership</span>
+                  <span>Regulatory Submissions & Compliance</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-                  <span>Data Review & Strategy</span>
+                  <span>Protocol Development & Review</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Data Integrity & Analysis</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
@@ -66,11 +84,15 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-                  <span>Scientific Mentorship</span>
+                  <span>Medical Writing & Communication</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
-                  <span>Regulatory Compliance</span>
+                  <span>Risk Management & Safety Oversight</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Investigator Relations</span>
                 </div>
               </div>
             </div>

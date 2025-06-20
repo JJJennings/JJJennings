@@ -1,27 +1,47 @@
 
-import { Award, BarChart3, Users, FileText } from 'lucide-react';
+import { Award, BarChart3, Users, FileText, Microscope, Target, BookOpen, Presentation } from 'lucide-react';
 
 const KeyAchievements = () => {
   const achievements = [
     {
-      icon: BarChart3,
-      title: "Global Oncology Trials",
-      description: "Led global oncology clinical trials with high scientific and operational complexity across multiple therapeutic areas."
+      icon: Microscope,
+      title: "Clinical Development Leadership",
+      description: "Led clinical development plans and study protocols for innovative oncology therapeutics, including ripretinib and binimetinib combination protocols, working closely with Medical Directors and cross-functional teams."
     },
     {
       icon: FileText,
-      title: "Data Review Frameworks",
-      description: "Developed and implemented comprehensive data review frameworks across multiple clinical programs to ensure data integrity."
+      title: "Regulatory Excellence",
+      description: "Contributed to clinical sections of regulatory submissions and responses to regulatory queries, ensuring compliance and successful IND submissions with demonstrated expertise in regulatory documentation."
     },
     {
-      icon: Award,
-      title: "Process Improvements",
-      description: "Championed process improvements to enhance trial execution and data quality, resulting in more efficient study operations."
+      icon: BarChart3,
+      title: "Data Integrity & Analysis",
+      description: "Performed high-level data cleaning activities requiring clinical judgment, interpreted complex data for regulatory submissions, and ensured study integrity through real-time monitoring and proactive oversight."
     },
     {
       icon: Users,
-      title: "Regulatory Contributions",
-      description: "Contributed to regulatory submissions and internal decision-making milestones, supporting successful drug development programs."
+      title: "Cross-Functional Collaboration",
+      description: "Successfully collaborated with Medical Directors, Pharmacology, Translational Research, Discovery teams, CROs, vendors, and clinical sites to drive clinical development success across multiple therapeutic programs."
+    },
+    {
+      icon: Target,
+      title: "Risk Management",
+      description: "Led development of master risk language for annual Investigator Brochure updates in partnership with Biostatistics, Medical, and Pharmacovigilance teams, ensuring comprehensive safety monitoring."
+    },
+    {
+      icon: BookOpen,
+      title: "Scientific Communication",
+      description: "Contributed to preparation of abstracts, manuscripts, and presentations for external meetings. Actively participated in presenting study data and designs at various scientific and clinical forums."
+    },
+    {
+      icon: Presentation,
+      title: "Advisory & Investigator Engagement",
+      description: "Presented data, protocol designs, and study information at advisory boards, investigator meetings, site initiation visits, and protocol review committee meetings to ensure successful study execution."
+    },
+    {
+      icon: Award,
+      title: "Therapeutic Area Expertise",
+      description: "Recognized as clinical/scientific subject matter expert on oncology products and studies, with deep knowledge in cell therapy trials and traditional oncology drug development programs."
     }
   ];
 
@@ -30,7 +50,7 @@ const KeyAchievements = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">Key Achievements</h2>
-          <p className="text-xl text-slate-600">Driving excellence in oncology clinical development</p>
+          <p className="text-xl text-slate-600">Driving excellence in oncology clinical development and regulatory science</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
