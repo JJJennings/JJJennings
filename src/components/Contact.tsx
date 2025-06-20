@@ -1,0 +1,84 @@
+
+import { Mail, Linkedin, FileText, Phone } from 'lucide-react';
+
+const Contact = () => {
+  return (
+    <section id="contact" className="py-20 bg-slate-50">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">Let's Connect</h2>
+          <p className="text-xl text-slate-600">Open to discussing oncology clinical development opportunities</p>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-800 mb-4">Professional Contact</h3>
+                <p className="text-slate-600 leading-relaxed mb-6">
+                  I'm always interested in connecting with fellow professionals in oncology clinical development, 
+                  discussing innovative approaches to clinical trials, or exploring leadership opportunities.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <a href="mailto:clinical.scientist@email.com" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
+                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
+                    <Mail className="w-5 h-5 text-teal-600" />
+                  </div>
+                  <span className="font-medium">clinical.scientist@email.com</span>
+                </a>
+
+                <a href="https://linkedin.com/in/clinical-scientist" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
+                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
+                    <Linkedin className="w-5 h-5 text-teal-600" />
+                  </div>
+                  <span className="font-medium">LinkedIn Profile</span>
+                </a>
+
+                <a href="#" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
+                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
+                    <FileText className="w-5 h-5 text-teal-600" />
+                  </div>
+                  <span className="font-medium">Download Resume</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl p-8 text-white">
+              <h3 className="text-xl font-bold mb-4">Areas of Expertise</h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Oncology Clinical Development</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Clinical Trial Leadership</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Data Review & Strategy</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Cross-Functional Collaboration</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Scientific Mentorship</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-teal-400 rounded-full"></div>
+                  <span>Regulatory Compliance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
