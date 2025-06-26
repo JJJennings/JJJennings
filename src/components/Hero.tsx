@@ -37,9 +37,8 @@ const Hero = () => {
             </div>
 
             <div className="flex items-center space-x-4 text-sm text-slate-300">
-              <div>📍 Boston, MA</div>
+              <div>📍 Remote</div>
               <div>📧 JuliaJoyJennings@gmail.com</div>
-              <div>📞 (508) 423-4853</div>
             </div>
 
             <button 
