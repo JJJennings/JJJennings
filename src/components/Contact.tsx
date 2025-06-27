@@ -29,20 +29,6 @@ const Contact = () => {
                   <span className="font-medium">JuliaJoyJennings@gmail.com</span>
                 </a>
 
-                <a href="tel:+15084234853" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
-                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
-                    <Phone className="w-5 h-5 text-teal-600" />
-                  </div>
-                  <span className="font-medium">(508) 423-4853</span>
-                </a>
-
-                <div className="flex items-center space-x-3 text-slate-700">
-                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-teal-600" />
-                  </div>
-                  <span className="font-medium">19 Crosstown Ave, Boston, MA 02132</span>
-                </div>
-
                 <a href="#" className="flex items-center space-x-3 text-slate-700 hover:text-teal-600 transition-colors group">
                   <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
                     <Linkedin className="w-5 h-5 text-teal-600" />
