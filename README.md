@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+This repository contains the source code for my personal website. It is built with Vite, React, and Tailwind CSS, and serves as my online homepage and portfolio. The live site is deployed via GitHub Pages and is available at JJJennings.github.io.
+Technologies Used
 
-## Project info
+    Vite – A fast modern build tool and development server (see vitejs.dev).
 
-**URL**: https://lovable.dev/projects/a78e5cfc-9641-4f48-9d0e-b1c89f4ed0bc
+    React – A JavaScript library for building user interfaces (reactjs.org).
 
-## How can I edit this code?
+    Tailwind CSS – A utility-first CSS framework for rapid UI development (tailwindcss.com).
 
-There are several ways of editing your application.
+    TypeScript – Superset of JavaScript that adds static typing for robustness.
 
-**Use Lovable**
+Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a78e5cfc-9641-4f48-9d0e-b1c89f4ed0bc) and start prompting.
+To set up this project locally, ensure you have Node.js (which includes npm) installed on your system. Then clone the repository and install the dependencies:
 
-Changes made via Lovable will be committed automatically to this repo.
+git clone https://github.com/JJJennings/JJJennings.github.io.git
+cd JJJennings.github.io
+npm install
 
-**Use your preferred IDE**
+This will download the project and install all required packages.
+Running Locally
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+After installing dependencies, start the development server:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+This will launch the Vite development server (often at http://localhost:5173 by default). You can then view the website in your browser and live-reload will be enabled for development convenience.
+Building
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To create an optimized production build of the site, run:
 
-**Use GitHub Codespaces**
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This will generate the static files for the website in the dist/ directory. The build includes minified assets and is ready for deployment.
+Deployment
 
-## What technologies are used for this project?
+This site is configured to be deployed via GitHub Pages. To deploy the latest build to GitHub Pages, run the deploy script:
 
-This project is built with:
+npm run deploy
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a78e5cfc-9641-4f48-9d0e-b1c89f4ed0bc) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This command uses the gh-pages tool to publish the contents of the dist folder to GitHub Pages (by updating the appropriate branch). Once completed, the updated site will be live at JJJennings.github.io.
