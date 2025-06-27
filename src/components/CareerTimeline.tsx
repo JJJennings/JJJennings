@@ -120,50 +120,50 @@ const CareerTimeline = () => {
   };
 
   return (
-    <section id="timeline" className="py-20 bg-slate-50">
+    <section id="timeline" className="py-20 bg-muted/50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Career Journey</h2>
-          <p className="text-xl text-slate-600 mb-8">A decade of progressive growth in oncology clinical research</p>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Career Journey</h2>
+          <p className="text-xl text-muted-foreground mb-8">A decade of progressive growth in oncology clinical research</p>
           
           <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-            <CollapsibleTrigger className="flex items-center justify-center space-x-2 bg-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow mx-auto">
-              <span className="text-slate-700 font-medium">
+            <CollapsibleTrigger className="flex items-center justify-center space-x-2 bg-card px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow mx-auto border">
+              <span className="text-foreground font-medium">
                 {isOpen ? 'Hide Career Details' : 'View Career Details'}
               </span>
-              <ChevronDown className={`w-5 h-5 text-slate-600 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
             </CollapsibleTrigger>
             
             <CollapsibleContent className="mt-8">
               <div className="relative">
-                <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-teal-500 to-slate-400"></div>
+                <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-teal-500 to-muted-foreground"></div>
                 
                 <div className="space-y-12">
                   {positions.map((position, index) => (
                     <div key={index} className={`relative flex items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                      <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-br ${getTypeColor(position.type)} rounded-full border-4 border-white shadow-lg flex items-center justify-center`}>
+                      <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-br ${getTypeColor(position.type)} rounded-full border-4 border-background shadow-lg flex items-center justify-center`}>
                         <TrendingUp className="w-4 h-4 text-white" />
                       </div>
                       
                       <div className={`ml-20 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
-                        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                        <div className="bg-card rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow border">
                           <div className="flex items-center space-x-2 text-teal-600 mb-2">
                             <Calendar className="w-4 h-4" />
                             <span className="font-semibold">{position.period}</span>
                           </div>
-                          <h3 className="text-xl font-bold text-slate-800 mb-1">{position.title}</h3>
-                          <div className="flex items-center space-x-2 text-slate-600 mb-3">
+                          <h3 className="text-xl font-bold text-foreground mb-1">{position.title}</h3>
+                          <div className="flex items-center space-x-2 text-muted-foreground mb-3">
                             <MapPin className="w-4 h-4" />
                             <span className="font-medium">{position.company}</span>
                           </div>
-                          <p className="text-slate-600 leading-relaxed mb-4">{position.description}</p>
+                          <p className="text-muted-foreground leading-relaxed mb-4">{position.description}</p>
                           
                           {position.highlights && (
                             <div className="space-y-2">
-                              <h4 className="font-semibold text-slate-700 text-sm">Key Accomplishments:</h4>
+                              <h4 className="font-semibold text-foreground text-sm">Key Accomplishments:</h4>
                               <ul className="space-y-1">
                                 {position.highlights.map((highlight, idx) => (
-                                  <li key={idx} className="text-sm text-slate-600 flex items-start">
+                                  <li key={idx} className="text-sm text-muted-foreground flex items-start">
                                     <span className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
                                     {highlight}
                                   </li>
