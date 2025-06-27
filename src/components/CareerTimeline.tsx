@@ -1,10 +1,5 @@
-import { Calendar, MapPin, TrendingUp, ChevronDown } from 'lucide-react';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+
+import { Calendar, MapPin, TrendingUp } from 'lucide-react';
 
 const CareerTimeline = () => {
   const positions = [
@@ -131,58 +126,44 @@ const CareerTimeline = () => {
         <div className="relative">
           <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-teal-500 to-slate-400"></div>
           
-          <Accordion type="multiple" className="space-y-12">
+          <div className="space-y-12">
             {positions.map((position, index) => (
-              <AccordionItem key={index} value={`position-${index}`} className="border-none">
-                <div className={`relative flex items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                  <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-br ${getTypeColor(position.type)} rounded-full border-4 border-white shadow-lg flex items-center justify-center`}>
-                    <TrendingUp className="w-4 h-4 text-white" />
-                  </div>
-                  
-                  <div className={`ml-20 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
-                    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                      <AccordionTrigger className="p-6 hover:no-underline [&[data-state=open]>div>svg]:rotate-180">
-                        <div className="text-left w-full">
-                          <div className="flex items-center justify-between w-full">
-                            <div className="flex-1">
-                              <div className="flex items-center space-x-2 text-teal-600 mb-2">
-                                <Calendar className="w-4 h-4" />
-                                <span className="font-semibold">{position.period}</span>
-                              </div>
-                              <h3 className="text-xl font-bold text-slate-800 mb-1">{position.title}</h3>
-                              <div className="flex items-center space-x-2 text-slate-600">
-                                <MapPin className="w-4 h-4" />
-                                <span className="font-medium">{position.company}</span>
-                              </div>
-                            </div>
-                            <ChevronDown className="w-5 h-5 text-slate-400 transition-transform duration-200 flex-shrink-0 ml-4" />
-                          </div>
-                        </div>
-                      </AccordionTrigger>
-                      
-                      <AccordionContent className="px-6 pb-6">
-                        <p className="text-slate-600 leading-relaxed mb-4">{position.description}</p>
-                        
-                        {position.highlights && (
-                          <div className="space-y-2">
-                            <h4 className="font-semibold text-slate-700 text-sm">Key Accomplishments:</h4>
-                            <ul className="space-y-1">
-                              {position.highlights.map((highlight, idx) => (
-                                <li key={idx} className="text-sm text-slate-600 flex items-start">
-                                  <span className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                                  {highlight}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </AccordionContent>
+              <div key={index} className={`relative flex items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-gradient-to-br ${getTypeColor(position.type)} rounded-full border-4 border-white shadow-lg flex items-center justify-center`}>
+                  <TrendingUp className="w-4 h-4 text-white" />
+                </div>
+                
+                <div className={`ml-20 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
+                  <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                    <div className="flex items-center space-x-2 text-teal-600 mb-2">
+                      <Calendar className="w-4 h-4" />
+                      <span className="font-semibold">{position.period}</span>
                     </div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-1">{position.title}</h3>
+                    <div className="flex items-center space-x-2 text-slate-600 mb-3">
+                      <MapPin className="w-4 h-4" />
+                      <span className="font-medium">{position.company}</span>
+                    </div>
+                    <p className="text-slate-600 leading-relaxed mb-4">{position.description}</p>
+                    
+                    {position.highlights && (
+                      <div className="space-y-2">
+                        <h4 className="font-semibold text-slate-700 text-sm">Key Accomplishments:</h4>
+                        <ul className="space-y-1">
+                          {position.highlights.map((highlight, idx) => (
+                            <li key={idx} className="text-sm text-slate-600 flex items-start">
+                              <span className="w-2 h-2 bg-teal-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
+                              {highlight}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
-              </AccordionItem>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </div>
     </section>
