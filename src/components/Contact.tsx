@@ -36,7 +36,7 @@ const Contact = () => {
                   <span className="font-medium">LinkedIn Profile</span>
                 </a>
 
-                <a href="/2025_Resume_Jennings.pdf" download="Julia_Jennings_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-foreground hover:text-teal-600 transition-colors group">
+                <a href="/Resume_Jennings.pdf" download="Julia_Jennings_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-3 text-foreground hover:text-teal-600 transition-colors group">
                   <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-200 transition-colors">
                     <FileText className="w-5 h-5 text-teal-600" />
                   </div>
