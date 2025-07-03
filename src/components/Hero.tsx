@@ -23,7 +23,7 @@ const Hero = () => {
                 Oncology Drug Development Expert
               </p>
             </div>
-            
+
             <div className="space-y-6 text-lg text-slate-200">
               <p>
                 <span className="text-teal-400 font-semibold">Objective:</span> Experienced Clinical Scientist with oncology experience seeking an opportunity for career development and advancement. Highly motivated to build on existing skills, and develop and implement processes at a small to midsize biotech.
@@ -42,7 +42,7 @@ const Hero = () => {
               <div>📧 JuliaJoyJennings@gmail.com</div>
             </div>
 
-            <button 
+            <button
               onClick={scrollToTimeline}
               className="inline-flex items-center space-x-2 bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg transition-colors group"
             >
